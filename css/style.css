@@ -1,6 +1,62 @@
+/* common */
+
+/* colori */
+:root {
+    --azzurro: #b4d0e7;
+    --blue: #0061ff;
+    --black: black;
+    --white: white;
+}
 /* utility */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-small {
+    max-width: 1000px;
+    margin: 150px auto;
+}
+
+/* header  */
+header nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    width: 100%;
+    background-color: var(--white);
+}
+#hero{
+    padding-top: 80px;
+}
+
+
+
+
+
+/* macro sezioni */
+header {
+    background-color: var(--azzurro);
+    
+}
+/* footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* classi container e flex generali  */
+.flex{
+    display: flex;
+}
+
