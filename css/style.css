@@ -140,7 +140,7 @@ h1 {
 
 /* prima section  */
 h2 {
-    font-size: 48px;
+    font-size: 46px;
 }
 .billing {
     padding: 20px;
@@ -230,7 +230,7 @@ div.buy:before {
     width   : 20%;  /* or 100px */
     border-bottom:1px solid var(--grey);
   }
-div.buy a {
+div.buy a, #our-clients a {
     text-decoration: underline;
     color: var(--normal-link);
 }
@@ -282,7 +282,7 @@ p.enterprise {
 }
 #partner h3 {
     padding-bottom: 10px;
-    line-height: 1.4em;
+    line-height: 1.5em;
 }
 #partner div.partner {
     text-align: center;
@@ -294,7 +294,28 @@ p.enterprise {
     color: var(--grey);
 }
 
+/* terza section "features" */
+#features .flex{
+    flex-wrap: wrap;
+}
+#features .card {
+    margin-top: 30px ;
+    margin-bottom: 30px;
+} 
+#features img{
+    /* questa regola è stata ripetuta su tutte le immagini rivedere codice */
+    width: 100%; 
+}
+#features h3{
+    padding: 30px 0;
+}
+#features p {
+    line-height: 1.5em;
+}
 
+#our-clients h2{
+    padding-bottom: 100px;
+}
 
 
 
