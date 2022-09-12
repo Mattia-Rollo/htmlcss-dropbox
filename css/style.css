@@ -56,6 +56,7 @@ li{
 .flex{
     display: flex; 
 }
+/* classi preimpostare per varie grandezze */
 .w-30 {
     width: 30%;
     
@@ -295,6 +296,7 @@ p.enterprise {
 }
 
 /* terza section "features" */
+
 #features .flex{
     flex-wrap: wrap;
 }
@@ -313,10 +315,27 @@ p.enterprise {
     line-height: 1.5em;
 }
 
+/* quarta section our-lients */
+
 #our-clients h2{
     padding-bottom: 100px;
 }
 
+/* quinsta section con i loghi delle aziende clienti o partner */
+#clients div {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+#clients div.center {
+    padding: 20px;
+    background-color: var(--very-lightgray);
+}
+#clients span {
+    font-size: 15px;
+    position: relative;
+    top: -20px;
+    left: -12px;
+}
 
 
 
