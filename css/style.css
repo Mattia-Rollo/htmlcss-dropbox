@@ -15,7 +15,7 @@
     --yellow: #ffd830;
     --very-lightgray: #f5f5f5;
 }
-/* utility */
+/* utility*/
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +25,9 @@ body {
     background-color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -33,12 +36,14 @@ body {
     max-width: 1000px;
     margin: 100px auto;
 }
-/* equivale a .d-flex di clealia  */
+/* classe flex principale  */
 .flex{
     display: flex;
+    
 }
 .w-30 {
     width: 30%;
+    
 }
 .w-70 {
     width: 70%;
@@ -46,6 +51,7 @@ body {
 
 /* header  */
 
+/* nav bar  */
 header nav {
     background-color: var(--white);
     position: fixed;
@@ -61,6 +67,16 @@ div.flex.nav {
     align-items: center;
     height: 100%;
 }
+.left img{
+    align-self: center;
+}
+nav li {
+    list-style: none;
+    padding: 10px;
+}
+
+/* hero container */
+
 #hero{
     padding-top: 80px;
 }
@@ -74,26 +90,25 @@ div.flex.nav {
 #hero a {
     display: inline-block;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background-color: var(--blue);
     color: var(--white);
     text-decoration: none;
 }
 #hero p{
     line-height: 1.5em;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 #hero i {
     display: block;
-    font-size: 36px;
+    font-size: 46px;
+    font-weight: 700;
+    padding-top: 50px;
 }
 h1 {
     font-size: 76px;
     padding-bottom: 50px;
 }
-
-
-
 
 
 /* macro sezioni */
