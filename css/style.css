@@ -79,7 +79,8 @@ header nav {
     width: 100%;
     height: 80px;
 }
-div.flex.nav {
+/* flex with space-between  */
+div.flex.sp-bt {
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -245,6 +246,43 @@ h4 {
     margin-left: -1.3em; /* same as padding-left set on li */
     width: 1.3em; /* same as padding-left set on li */
   }
+  /* ultima parte della prima section "plans" */
+div.team {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 100px;
+}
+
+#piani div.flex.sp-bt{
+    margin-top: 20px;
+    padding: 20px 0;
+    align-items: flex-start;
+}
+p.enterprise {
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+/* seconda section "partner" */
+
+#partner img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
