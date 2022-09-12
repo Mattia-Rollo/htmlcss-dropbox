@@ -16,6 +16,12 @@
     --very-lightgray: #f5f5f5;
 }
 /* utility*/
+.bold {
+    font-weight: 700;
+}
+.debug{
+    border: 1px solid black;
+}
 * {
     margin: 0;
     padding: 0;
@@ -35,12 +41,11 @@ a {
 }
 .container-small {
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 150px auto;
 }
 /* classe flex principale  */
 .flex{
-    display: flex;
-    
+    display: flex; 
 }
 .w-30 {
     width: 30%;
@@ -51,6 +56,9 @@ a {
 }
 
 /* header  */
+header {
+    background-color: var(--azzurro);
+}
 
 /* nav bar  */
 header nav {
@@ -69,6 +77,7 @@ div.flex.nav {
     height: 100%;
 }
 .left img{
+    margin-left: 10px;
     align-self: center;
 }
 nav li {
@@ -94,7 +103,7 @@ nav li {
 }
 #hero a {
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 20px;
 }
 #hero p{
@@ -112,12 +121,36 @@ h1 {
     padding-bottom: 50px;
 }
 
+/* main content  */
 
-/* macro sezioni */
-header {
-    background-color: var(--azzurro);
-    
+/* prima section  */
+h2 {
+    font-size: 48px;
 }
+.billing {
+    padding: 20px;
+    margin: 50px 0;
+}
+.billing span {
+    margin-right: 50px;
+}
+.card {
+    height: 200px;
+    width: calc((100% - 100px) / 3);
+}
+.margin {
+    margin: 0 50px;
+}
+
+/* stile card */
+.mode {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+
+
 /* footer */
 footer {
     background-color: var(--black);
