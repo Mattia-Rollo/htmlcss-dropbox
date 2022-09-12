@@ -148,7 +148,8 @@ h2 {
     margin: 0 50px;
 }
 
-/* stile card */
+/*creazione stile card */
+
 .mode {
     text-align: center;
     border-bottom: 1px solid grey;
@@ -168,6 +169,8 @@ h3 {
 .price {
     font-size: 14px;
 }
+
+/* prima lista all'interno di card */
 
 .card ul.info-plan li{
     padding: 10px 0;
@@ -207,6 +210,7 @@ div.trial .bottoni { /*ho scritto bottini invece che bottoni !#@.§&£" :-) */
 div.buy {
     line-height: 110px;
     position: relative;
+    margin-bottom: 50px;
 }
 /* piccolo pezzo di bordo in fondo al div */
 div.buy:before {
@@ -222,6 +226,24 @@ div.buy a {
     text-decoration: underline;
     color: var(--normal-link);
 }
+/* highlights - seconda lista nella card  */
+h4 {
+    padding: 20px 0;
+}
+
+.card ul.highlights li{
+    padding: 10px 0;
+    padding-left: 20px;
+    line-height: 1.5em;
+}
+.card ul.highlights li::before {
+    content: "\f00c"; /* FontAwesome Unicode */
+    color: var(--blue);
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
 
 
 /* footer */
