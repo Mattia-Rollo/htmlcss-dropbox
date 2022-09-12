@@ -27,6 +27,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: var(--black);
 }
 .container {
     max-width: 1200px;
@@ -74,7 +75,11 @@ nav li {
     list-style: none;
     padding: 10px;
 }
-
+.bottoni {
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+}
 /* hero container */
 
 #hero{
@@ -91,9 +96,6 @@ nav li {
     display: inline-block;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: var(--blue);
-    color: var(--white);
-    text-decoration: none;
 }
 #hero p{
     line-height: 1.5em;
