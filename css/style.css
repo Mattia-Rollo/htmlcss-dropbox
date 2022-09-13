@@ -400,13 +400,24 @@ div.designit:before {
     width   : 20%;  /* or 100px */
     border-bottom:1px solid var(--grey);
   }
+  /* stile per i paragrafi dentro al div centrale  */
   #clients div.center p {
     font-size: 16px;
     padding: 30px 0;
 
 }
 
-
+#trial .container-small{
+    margin: 0 auto;
+    padding: 120px 0;
+}
+#trial .container-small > div:first-child {
+    padding-left: 50px;
+} 
+#trial a.bottoni {
+    background-color: var(--white);
+    color: var(--black);
+}
 
 
 
