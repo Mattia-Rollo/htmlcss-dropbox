@@ -3,7 +3,7 @@
 /* colori */
 :root {
     --azzurro: #b4d0e7;
-    --blue: #0061ff;
+    --blue: #0061ff; /*bottoni*/
     --black: black;
     --white: white;
     --dark-red: #61082b; /* text and asu logo */
@@ -17,8 +17,35 @@
     --grey: grey;
     --normal-link: blue;
     --white: white;
+    --dark-blue: #0d2481;
 }
 /* utility*/
+.bg-dark-red {
+    background-color: var(--dark-red);
+}
+.bg-green-border{
+    background-color: var(--green);
+    border: 20px solid var(--lightgreen);
+}
+.bg-strong-blue {
+    background-color: var(--strong-blue);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.bg-red {
+    background-color: var(--red);
+}
+.bg-azzurro {
+    background-color: var(--azzurro);
+}
+.bg-blue {
+    background-color: var(--dark-blue);
+}
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
 .grey {
     color: var(--grey);
 }
@@ -108,6 +135,7 @@ nav li {
     display: block;
     min-width: 100px;
 }
+
 /* hero container */
 
 #hero{
@@ -329,8 +357,8 @@ p.enterprise {
     height: 33vw;
 }
 #clients > div {
-    width: calc(100% / 3);
-    
+    /* usare 100% - 60vw */
+    width: calc(100% / 3); 
     flex-wrap: wrap;
     
 }
@@ -338,7 +366,6 @@ p.enterprise {
 #clients .left div, #clients .right div  {
     width: 50%;
     height: 50%;
-    background-color: #0093ce;
     align-items: center;
     justify-content: center;
     
@@ -351,24 +378,11 @@ p.enterprise {
 }
 #clients img {
     width: 50%;
-    
+    filter: invert(1);
 }
-
-#clients .center h2::after {
-    
-        content: "\00AE"; /* FontAwesome Unicode */
-        /* color: var(--blue); */
-        /* font-family: FontAwesome; */
-        display: inline-block;
-        position: relative;
-        left: -0.8em;
-        top: -1.5em;
-        font-size: small;
-        /*margin-left: -1.3em;  same as padding-left set on li */
-        /*width: 1.3em; same as padding-left set on li */
-      
+#clients .center img{
+    filter: invert(0);
 }
-
 
 
 
