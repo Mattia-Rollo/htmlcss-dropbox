@@ -406,6 +406,7 @@ div.designit:before {
     padding: 30px 0;
 
 }
+
 /* sesta setion trail */
 
 #trial .container-small{
@@ -419,6 +420,46 @@ div.designit:before {
     background-color: var(--white);
     color: var(--black);
 }
+
+/* settima section Q&A  */
+#questions h2{
+    padding-bottom: 70px;
+    border-bottom: 1px solid var(--black);
+}
+#questions details{
+    width: 100%;
+    padding: 50px 0;
+   border-bottom : 1px solid black;
+   position: relative;
+   cursor: pointer;
+}
+
+#questions summary {
+    list-style: none;
+}
+#questions summary:after {
+    content: "\f078";
+    font-family: FontAwesome;
+    font-weight: 700;
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+    
+}
+#questions details[open] summary::after { 
+    transform: rotate(-180deg);
+  }
+#questions summary:{
+    transform: rotate(900deg);
+}
+summary ~ p {
+    padding-top: 30px;
+}
+#questions details:hover {
+    background-color: var(--very-lightgray);
+}
+
+
 
 
 
