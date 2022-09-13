@@ -25,7 +25,7 @@
 }
 .bg-green-border{
     background-color: var(--green);
-    border: 20px solid var(--lightgreen);
+    border: 1vw solid var(--lightgreen);
 }
 .bg-strong-blue {
     background-color: var(--strong-blue);
@@ -354,28 +354,31 @@ p.enterprise {
 
 /* quinta section con i loghi delle aziende clienti o partner */
 #clients {
-    height: 33vw;
+
 }
-#clients > div {
+#clients > div  {
     /* usare 100% - 60vw */
-    width: calc(100% / 3); 
+    width: 30vw;
+    height: 30vw;
     flex-wrap: wrap;
     
 }
 /* impostato grandezza 4 quadrati colorati dentro a left e right  */
 #clients .left div, #clients .right div  {
-    width: 50%;
-    height: 50%;
+    width: 15vw;
+    height: 15vw;
     align-items: center;
     justify-content: center;
     
 }
 #clients div.center {
+    width: calc(100% - 60vw);
     padding: 40px;
     background-color: var(--very-lightgray);
     font-size: 0.5vw;
-    
+    overflow: auto;
 }
+
 #clients img {
     width: 50%;
     filter: invert(1);
@@ -383,7 +386,25 @@ p.enterprise {
 #clients .center img{
     filter: invert(0);
 }
+/* Codice importante per avere un pezzo di bordo nella parte bottom del div */
+div.designit {
+    position: relative;
+    padding-bottom: 10%;
+}
+div.designit:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 20%;  /* or 100px */
+    border-bottom:1px solid var(--grey);
+  }
+  #clients div.center p {
+    font-size: 16px;
+    padding: 30px 0;
 
+}
 
 
 
