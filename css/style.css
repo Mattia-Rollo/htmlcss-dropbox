@@ -492,6 +492,7 @@ div.designit:before {
     position: absolute;
     display: inline-block;
     right: 20px;
+    transition: all 0.5s;
     
 }
 #questions details[open] summary::after { 
