@@ -3,7 +3,8 @@
 /* colori */
 :root {
     --azzurro: #b4d0e7;
-    --blue: #0061ff; /*bottoni*/
+    --blue: #0061ff;
+    --blue-chiaro: #3784ff; /*bottoni*/
     --black: black;
     --white: white;
     --dark-red: #61082b; /* text and asu logo */
@@ -131,11 +132,11 @@ nav a{
     height:100%;
     padding: 29px 17px;
     display: inline-block;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 header nav a:not(.bottoni, .logo):hover {
     background-color: var(--very-lightgray);
-    border-bottom: 1px solid var(--lightgray);
+    border-bottom: 1px solid var(--very-dark-gray);
 }
 header nav .left img{
     width: 100%;
@@ -176,6 +177,10 @@ li:hover div.list-menu {
     text-align: center;
     display: block;
     min-width: 100px;
+    transition: all 0.3s;
+}
+.bottoni:hover {
+    background-color: var(--blue-chiaro);
 }
 
 /* hero container */
@@ -484,7 +489,7 @@ div.designit:before {
 
 #questions summary {
     list-style: none;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 #questions summary:after {
     content: "\f078";
