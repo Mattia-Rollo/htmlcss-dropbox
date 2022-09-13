@@ -56,12 +56,15 @@
     font-weight: 700;
 }
 .debug{
-    border: 1px solid var(--grey);
+    border: 1px solid var(--lightgray);
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     background-color: var(--white);
@@ -136,10 +139,9 @@ header nav a:not(.bottoni, .logo):hover {
 }
 header nav .left img{
     width: 100%;
-    
 }
- header nav li.btn-inizia {
-    padding: 20px 0;    
+header nav li.btn-inizia {
+    padding: 20px 20px;    
 }
 /* menu a tendina sui link della nav-bar  */
 header div.list-menu {
@@ -232,7 +234,7 @@ h2 {
 
 .mode {
     text-align: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--lightgray);
     padding: 10px;
 }
 .details {
@@ -337,6 +339,9 @@ div.team {
     margin-top: 20px;
     padding: 20px 0;
     align-items: flex-start;
+}
+#piani div.flex.contact{
+    padding: 30px;
 }
 p.enterprise {
     padding-top: 20px;
