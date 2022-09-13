@@ -18,6 +18,8 @@
     --normal-link: blue;
     --white: white;
     --dark-blue: #0d2481;
+    --very-dark-gray: #2e2e2e;
+    --text-footer: #f7f7f7;
 }
 /* utility*/
 .bg-dark-red {
@@ -365,8 +367,8 @@ p.enterprise {
 }
 /* impostato grandezza 4 quadrati colorati dentro a left e right  */
 #clients .left div, #clients .right div  {
-    width: 15vw;
-    height: 15vw;
+    width: 50%;
+    height: 50%;
     align-items: center;
     justify-content: center;
     
@@ -454,7 +456,7 @@ div.designit:before {
 summary ~ p {
     position: relative;
     top: -20px;
-    left: 10px;
+    padding: 0 20px;
 }
 #questions details:hover {
     background-color: var(--very-lightgray);
@@ -470,10 +472,32 @@ summary ~ p {
 
 /* footer */
 footer {
-    background-color: var(--black);
+    background-color: var(--very-dark-gray);
+    color: var(--text-footer);
+    
+}
+footer nav {
+    width: 1200px;
+    padding: 100px 0;
+    position: relative;
+}
+footer nav::after {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 12%;  /* or 100px */
+    border-bottom:1px solid var(--white);
+}
+footer nav a {
     color: var(--white);
 }
-footer ul{
+
+footer nav ul{
     width: calc(100% / 5);
+}
+footer div.container {
+    padding: 50px 0;
 }
 
