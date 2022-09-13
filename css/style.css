@@ -450,9 +450,7 @@ div.designit:before {
 #questions details[open] summary::after { 
     transform: rotate(-180deg);
   }
-#questions summary:{
-    transform: rotate(900deg);
-}
+
 summary ~ p {
     position: relative;
     top: -20px;
