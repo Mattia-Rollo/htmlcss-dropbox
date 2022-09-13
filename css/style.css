@@ -456,6 +456,7 @@ div.designit:before {
 summary ~ p {
     position: relative;
     top: -20px;
+    left: 10px;
 }
 #questions details:hover {
     background-color: var(--very-lightgray);
@@ -474,5 +475,7 @@ footer {
     background-color: var(--black);
     color: var(--white);
 }
-
+footer ul{
+    width: calc(100% / 5);
+}
 
