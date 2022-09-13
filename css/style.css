@@ -536,6 +536,9 @@ footer nav {
 footer nav a {
     padding: 0;
 }
+footer nav ul li:first-child{
+    padding-bottom: 30px;
+}
 footer nav li {
     padding: 10px;
 }
