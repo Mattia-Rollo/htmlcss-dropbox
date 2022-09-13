@@ -35,7 +35,7 @@
 }
 body {
     background-color: var(--white);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 a {
     text-decoration: none;
@@ -104,6 +104,9 @@ nav li {
     padding: 10px;
     background-color: var(--blue);
     color: var(--white);
+    text-align: center;
+    display: block;
+    min-width: 100px;
 }
 /* hero container */
 
@@ -286,13 +289,13 @@ p.enterprise {
     line-height: 1.5em;
 }
 #partner div.partner {
-    text-align: center;
+    /* text-align: center; */
     padding: 50px;
 }
 #partner div.partner a {
     background-color: var(--white);
-    border: 1px solid var(--grey);
-    color: var(--grey);
+    border: 1px solid var(--black);
+    color: var(--black);
 }
 
 /* terza section "features" */
@@ -322,28 +325,35 @@ p.enterprise {
 }
 
 /* quinta section con i loghi delle aziende clienti o partner */
-
-#clients > div {
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
-    flex-wrap: wrap;
+#clients {
+    height: 33vw;
 }
-#clients .left div {
-    min-width: 50%;
+#clients > div {
+    width: calc(100% / 3);
+    
+    flex-wrap: wrap;
+    
+}
+/* impostato grandezza 4 quadrati colorati dentro a left e right  */
+#clients .left div, #clients .right div  {
+    width: 50%;
     height: 50%;
     background-color: #0093ce;
-    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    
 }
 #clients div.center {
-    padding: 20px;
+    padding: 40px;
     background-color: var(--very-lightgray);
+    font-size: 0.5vw;
+    
 }
-#clients span {
-    font-size: 15px;
-    position: relative;
-    top: -20px;
-    left: -12px;
+#clients img {
+    width: 50%;
+    
 }
+
 #clients .center h2::after {
     
         content: "\00AE"; /* FontAwesome Unicode */
