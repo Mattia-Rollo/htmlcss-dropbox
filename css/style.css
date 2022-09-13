@@ -479,6 +479,7 @@ div.designit:before {
    border-bottom : 1px solid black;
    position: relative;
    cursor: pointer;
+   transition: all 0.5s;
 }
 
 #questions summary {
