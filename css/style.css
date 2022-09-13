@@ -428,7 +428,7 @@ div.designit:before {
 }
 #questions details{
     width: 100%;
-    padding: 50px 0;
+    /* padding: 50px 0; */
    border-bottom : 1px solid black;
    position: relative;
    cursor: pointer;
@@ -436,6 +436,7 @@ div.designit:before {
 
 #questions summary {
     list-style: none;
+    padding: 50px 0;
 }
 #questions summary:after {
     content: "\f078";
@@ -453,7 +454,8 @@ div.designit:before {
     transform: rotate(900deg);
 }
 summary ~ p {
-    padding-top: 30px;
+    position: relative;
+    top: -20px;
 }
 #questions details:hover {
     background-color: var(--very-lightgray);
