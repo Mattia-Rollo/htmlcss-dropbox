@@ -22,6 +22,11 @@
     --dark-blue: #0d2481;
     --very-dark-gray: #2e2e2e;
     --text-footer: #f7f7f7;
+
+    /* for page share.html  */
+    --share-img-hero: #14c8eb;
+    --left-img-hero-share: #1e1919;
+    --botton-hero: #79acff;
 }
 /* utility*/
 .bg-dark-red {
@@ -637,3 +642,44 @@ footer div.container {
       background: white;
   }
   
+
+  /* seconda pagina share.html  */
+#hero.share {
+    /* padding-top: 80px; */
+    /* bottom: 80px; */
+    height: 600px;
+}
+#hero.share {
+    color: var(--white);
+}
+#hero.share h1{
+    
+    font-size: 48px;
+}
+#hero.share .w-30{
+    padding: 30PX;
+    background-color: var(--left-img-hero-share);
+}
+#hero.share .w-30 i{
+    display: inline-block;
+    font-size:medium;
+    padding: 0 20px;
+}
+#hero.share .w-30 a{
+    padding: 30px 60px;
+    color: var(--left-img-hero-share);
+    background-color: var(--botton-hero);
+}
+#hero.share .w-70 {
+    background-color: var(--share-img-hero);
+}
+#hero.share .w-70 img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;    
+}
+.hero-2 {
+    height: 500px;
+}
